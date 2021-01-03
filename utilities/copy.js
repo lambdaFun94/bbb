@@ -17,8 +17,8 @@ const routes = [
 
 const getPage = async (route) => {
   const response = await wpSite.get(`/${route}`);
-  fs.writeFileSync(`./wpPages/${route}.html`, response.data);
+  fs.writeFileSync(`../server/wpPages/${route}.html`, response.data);
 };
 
 // routes.forEach(getPage);
-getPage("");
+getPage("mission");

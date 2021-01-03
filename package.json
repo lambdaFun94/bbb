@@ -2,10 +2,14 @@
   "name": "bbb",
   "version": "1.0.0",
   "description": "",
-  "main": "copy.js",
+  "main": "index.js",
+  "engines": {
+    "node": "15.3.0",
+    "npm": "7.0.14"
+  },
   "scripts": {
-    "start": "node ./server",
-    "dev": "nodemon ./server"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
