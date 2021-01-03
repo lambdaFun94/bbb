@@ -19,6 +19,9 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname + "/wpPages/about.html"));
 });
 
+app.get("/mission", (req, res) => {
+  res.sendFile(path.join(__dirname + "/wpPages/mission.html"));
+});
 app.get("/bookreadings", (req, res) => {
   res.sendFile(path.join(__dirname + "/wpPages/bookreadings.html"));
 });
