@@ -2,15 +2,6 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-const routes = [
-  "about",
-  "bookreadings",
-  "blog",
-  "grown-up-resources",
-  "for-authors",
-  "contact",
-];
-
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/wpPages/index.html"));
 });
